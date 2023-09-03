@@ -1,0 +1,25 @@
+
+img{
+  max-width: 100%;
+display: block;
+}
+
+html{
+  color-scheme: light dark;
+  overflow-x: hidden;
+
+}
+*{
+  margin:0
+}
+
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+body{
+  /* cursor:url("/public/customCursor.png"),auto ; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
