@@ -1,7 +1,7 @@
 import "./App.css";
 import Cursor from "./Components/cursor";
 import NavBar from "./Components/NavBar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import ProductGallery from "./Components/ProductGallery";
 import AboutUs from "./Pages/AboutUs";
