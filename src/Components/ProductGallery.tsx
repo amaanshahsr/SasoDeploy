@@ -1,5 +1,3 @@
-import React from "react";
-
 function ProductGallery() {
   return (
     <div className="w-screen bg-[#3A5A40] relative h-max grid grid-cols-4 gap-10 place-items-center z-30 text-[white]  backdrop-blur-lg p-7 lg:p-14   font-title">

@@ -1,13 +1,4 @@
-import React, { useEffect } from "react";
-import Cursor from "../Components/cursor";
-
-function Landing(props: any) {
-  const { scrolled, setscrolled } = props;
-
-  useEffect(() => {
-    console.log("scrolled", scrolled);
-  }, [scrolled]);
-
+function Landing() {
   return (
     <>
       <div className="   w-screen h-screen  bg-leaves bg-fixed  top-0 left-0 font-title p-7 lg:p-14   grid grid-cols-1 grid-rows-2 ">

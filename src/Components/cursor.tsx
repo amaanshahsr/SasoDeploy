@@ -3,12 +3,17 @@ import { throttle } from "underscore";
 
 function Cursor() {
   const cursorRef = useRef() as MutableRefObject<HTMLDivElement>;
-  const [interactable, setinteractable] = useState(false);
-  const [link, setlink] = useState(false);
+  const [interactable, setinteractable] = useState<any>(false);
+  const [link, setlink] = useState<any>(false);
 
   const mouseMoveHandler = (e: MouseEvent) => {
-    const interactable = e?.target?.className?.includes("interactable");
-    const link = e?.target?.className?.includes("link");
+    const { target } = e;
+    let interactable;
+    let link;
+    if (target instanceof HTMLElement) {
+      interactable = target.className?.includes("interactable");
+      link = target.className?.includes("link"); // DOMTokenList
+    }
 
     setinteractable(interactable);
     setlink(link);
