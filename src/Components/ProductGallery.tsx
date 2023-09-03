@@ -6,48 +6,51 @@ function ProductGallery() {
       </h1>
       <img
         className="hover:scale-110"
-        src="/Catalogue/SasoBabyDetergent.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SasoBabyDetergent.webp"
       />
       <img
         // className="absolute top-[5%] right-0"
-        src="/Catalogue/SasofloorCleaner.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SasofloorCleaner.webp"
       />
       <img
         // className="absolute top-[45%] right-0"
-        src="/Catalogue/SasoHerbalDishWah.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SasoHerbalDishWah.webp"
       />
       <img
         // className=" absolute z-[1]  top-[10%] left-0 "
-        src="/Catalogue/SASO Brass Cleaner.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Brass Cleaner.webp"
       />
       <img
         // className=" absolute top-[70%]  "
-        src="/Catalogue/SASO Car Bike Shampoo.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Car Bike Shampoo.webp"
       />
-      <img className="" src="/Catalogue/SASO Cockroach Repellent Spray.webp" />
+      <img
+        className=""
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Cockroach Repellent Spray.webp"
+      />
       <img
         // className=" absolute top-[10%] left-[70%]  "
-        src="/Catalogue/SASO Glass Cleaner Spray.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Glass Cleaner Spray.webp"
       />
       <img
         // className=" absolute bottom-20  right-[5%] "
-        src="/Catalogue/SASO Herbal Dishwasher Machine Liquid Detergent.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Herbal Dishwasher Machine Liquid Detergent.webp"
       />
       <img
         // className=" absolute  left-[20%] top-[40%]  "
-        src="/Catalogue/SASO Herbal Kennel Wash.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Herbal Kennel Wash.webp"
       />
       <img
         // className=" absolute  top-[70%]  right-[40%] "
-        src="/Catalogue/SASO Shoe Deodorizer Spray.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Shoe Deodorizer Spray.webp"
       />
       <img
         // className=" absolute left-[30%] "
-        src="/Catalogue/SASO Solar Panel Cleaner.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Solar Panel Cleaner.webp"
       />
       <img
         // className=" absolute  top-[43%] right-[23%] "
-        src="/Catalogue/SASOWMC.webp"
+        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASOWMC.webp"
       />
     </div>
   );

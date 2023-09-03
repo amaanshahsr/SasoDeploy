@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import env from "../Components/env";
 
 function Test() {
   const [bgchange, setBgchange] = useState(false);
@@ -70,17 +71,17 @@ function Test() {
           className="absolute right-0 top-0 object-cover h-full w-[30%]"
         /> */}
         <img
-          src="/public/pngegg(6).webp"
+          src={`${env}pngegg(6).webp`}
           className="absolute scale-125 z-10 hidden lg:block right-0 top-0"
         />
         <img
-          src="/public/pngegg(6).webp"
+          src={`${env}pngegg(6).webp`}
           className="absolute scale-125 z-10 mix-blend-overlay md:mix-blend-normal opacity-70 md:opacity-100  left-0 rotate-180 top-0"
         />
       </section>
       <section className="w-screen xl:h-max relative gap-10 z-[5]  text-white md:text-[#DAD7CD]   bg-[#588157]  p-8 sm:p-16 lg:p-24 text-center lg:text-left flex flex-col lg:flex-row  items-start  ">
         <img
-          src="/public/pngegg(4).webp"
+          src={`${env}pngegg(4).webp`}
           className="absolute top-0 mix-blend-overlay md:mix-blend-normal md:hidden right-0 z-10"
         />
         <div className="   flex flex-col gap-7 text-9xl font-semibold font-title lg:w-[50%] xl:w-[40%] ">
@@ -106,7 +107,7 @@ function Test() {
         </div>
         <img
           className="absolute rotate-90  scale-[75%] xl:scale-105 lg:-left-[20%] xl:-left-[10%] -bottom-[100px] z-10"
-          src="/public/pngegg(1).webp"
+          src={`${env}pngegg(1).webp`}
         />
       </section>
       <section
@@ -117,7 +118,7 @@ function Test() {
         }  w-screen relative   p-8 sm:p-16 lg:p-24 flex justify-center items-center `}
       >
         <img
-          src="/public/pngegg(3).webp"
+          src={`${env}pngegg(3).webp`}
           className="absolute right-0 top-0 z-10 opacity-80 mix-blend-hard-light lg:mix-blend-normal"
         />
 
@@ -170,7 +171,7 @@ function Test() {
             View Products
           </button>
         </div>
-        <img src="/public/Products.webp" className="w-screen " />
+        <img className="w-screen " src={`${env}Products.webp`} />
       </section>
     </>
   );

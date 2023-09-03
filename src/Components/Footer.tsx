@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import env from "./env";
 
 function Footer() {
   const navigate = useNavigate();
@@ -8,7 +9,7 @@ function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="flex flex-col sm:flex-row justify-center items-center mb-4 sm:mb-0">
             <img
-              src="/public/newLogo.png"
+              src={`${env}newLogo.png`}
               className="h-8 mb-3 sm:mb-0 sm:mr-3"
               alt="Flowbite Logo"
             />

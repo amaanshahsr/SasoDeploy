@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import env from "./env";
 
 function NavBar() {
   const [toggleNav, setToggleNav] = useState(false);
@@ -41,7 +42,7 @@ function NavBar() {
             ))}
             <img
               className="w-24 h-24 lg:hidden  shrink-0 "
-              src="/public/newLogo.png"
+              src={`${env}newLogo.png`}
             />
             <span className="text-xs font-body lg:hidden ">
               an ISO 9001-2015 Certified Company

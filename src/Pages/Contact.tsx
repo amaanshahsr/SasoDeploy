@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import env from "../Components/env";
 
 function Contact() {
   const detailsection = [
@@ -23,7 +24,7 @@ function Contact() {
   return (
     <div className="p-8 md:p-16 lg:p-24 w-screen overflow-hidden  relative flex lg:justify-end lg:h-screen text-[#344E41] bg-[#DAD7CD]">
       <img
-        src="/public/pngegg(6).webp"
+        src={`${env}pngegg(6).webp`}
         className="absolute rotate-180 top-0 left-0 lg:opacity-100 xl:mix-blend-normal mix-blend-overlay"
       />
       <div className="xl:w-[75%] grid grid-cols-2 grid-rows-2 gap-10 z-10   ">
