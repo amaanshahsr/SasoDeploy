@@ -53,17 +53,16 @@ function Footer() {
                 onClick={() => {
                   navigate("/contact");
                 }}
-                className="hover:underline interactable link"
+                className="hover:underline  cursor-pointer interactable link"
               >
                 Contact
               </div>
             </li>
           </ul>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm w-max mx-auto  text-gray-500 sm:text-center dark:text-gray-400">
-          © 2023 <div className="hover:underline">Saso</div>. All Rights
-          Reserved.
+        <hr className="my-6 border-gray-200 sm:mx-auto  dark:border-gray-700 lg:my-8" />
+        <span className="block text-sm w-max mx-auto text-gray-500  sm:text-center dark:text-gray-400">
+          © 2023 Saso. All Rights Reserved.
         </span>
       </div>
     </footer>

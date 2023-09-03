@@ -49,7 +49,7 @@ function NavBar() {
             </span>
           </ul>
           <div className="absolute bottom-0 right-0  hidden lg:flex flex-col items-center">
-            <img className="w-32 h-32 " src="/public/newLogo.png" />
+            <img className="w-32 h-32 " src={`${env}newLogo.png`} />
             <span className="text-sm font-body mt-3">
               an ISO 9001-2015 Certified Company
             </span>
