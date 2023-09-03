@@ -1,57 +1,30 @@
+import env from "./env";
+
 function ProductGallery() {
+  const imageArray = [
+    "SasoBabyDetergent.webp",
+    "SasofloorCleaner.webp",
+    "SasoHerbalDishWah.webp",
+    "SASO Brass Cleaner.webp",
+    "SASO Car Bike Shampoo.webp",
+    "SASO Cockroach Repellent Spray.webp",
+    "SASO Glass Cleaner Spray.webp",
+    "SASO Herbal Dishwasher Machine Liquid Detergent.webp",
+    "SASO Herbal Kennel Wash.webp",
+    "SASO Shoe Deodorizer Spray.webp",
+    "SASO Solar Panel Cleaner.webp",
+    "SASOWMC.webp",
+  ];
   return (
-    <div className="w-screen bg-[#3A5A40] relative h-max grid grid-cols-4 gap-10 place-items-center z-30 text-[white]  backdrop-blur-lg p-7 lg:p-14   font-title">
-      <h1 className=" writing-mode-vertical font-bold col-span-4 row-span-1 whitespace-nowrap  text-9xl z-30 text">
+    <div className="w-screen bg-[#3A5A40] relative h-max grid md:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center z-30 text-[white]  backdrop-blur-lg p-7 lg:p-14   font-title">
+      <h1 className=" writing-mode-vertical font-bold md:col-span-2 lg:col-span-4 row-span-1 whitespace-nowrap sm:text-5xl md:text-7xl  lg:text-9xl z-30 text">
         Our Products
       </h1>
-      <img
-        className="hover:scale-110"
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SasoBabyDetergent.webp"
-      />
-      <img
-        // className="absolute top-[5%] right-0"
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SasofloorCleaner.webp"
-      />
-      <img
-        // className="absolute top-[45%] right-0"
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SasoHerbalDishWah.webp"
-      />
-      <img
-        // className=" absolute z-[1]  top-[10%] left-0 "
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Brass Cleaner.webp"
-      />
-      <img
-        // className=" absolute top-[70%]  "
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Car Bike Shampoo.webp"
-      />
-      <img
-        className=""
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Cockroach Repellent Spray.webp"
-      />
-      <img
-        // className=" absolute top-[10%] left-[70%]  "
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Glass Cleaner Spray.webp"
-      />
-      <img
-        // className=" absolute bottom-20  right-[5%] "
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Herbal Dishwasher Machine Liquid Detergent.webp"
-      />
-      <img
-        // className=" absolute  left-[20%] top-[40%]  "
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Herbal Kennel Wash.webp"
-      />
-      <img
-        // className=" absolute  top-[70%]  right-[40%] "
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Shoe Deodorizer Spray.webp"
-      />
-      <img
-        // className=" absolute left-[30%] "
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASO Solar Panel Cleaner.webp"
-      />
-      <img
-        // className=" absolute  top-[43%] right-[23%] "
-        src="https://amaanshahsr.github.io/sasoDeploy/Catalogue/SASOWMC.webp"
-      />
+      {imageArray.map((node) => {
+        return (
+          <img className="hover:scale-110" src={`${env}Catalogue/${node}`} />
+        );
+      })}
     </div>
   );
 }
