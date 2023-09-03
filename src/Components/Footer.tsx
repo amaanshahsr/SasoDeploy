@@ -22,7 +22,7 @@ function Footer() {
                 onClick={() => {
                   navigate("/home");
                 }}
-                className="mr-4 hover:underline md:mr-6 interactable link "
+                className="mr-4 cursor-pointer hover:underline md:mr-6 interactable link "
               >
                 Home
               </div>
@@ -32,7 +32,7 @@ function Footer() {
                 onClick={() => {
                   navigate("/about");
                 }}
-                className="mr-4 hover:underline md:mr-6 interactable link"
+                className="mr-4 cursor-pointer hover:underline md:mr-6 interactable link"
               >
                 About
               </div>
@@ -42,7 +42,7 @@ function Footer() {
                 onClick={() => {
                   navigate("/products");
                 }}
-                className="mr-4 hover:underline md:mr-6 interactable link "
+                className="mr-4 cursor-pointer hover:underline md:mr-6 interactable link "
               >
                 Products
               </div>
@@ -61,11 +61,8 @@ function Footer() {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm w-max mx-auto  text-gray-500 sm:text-center dark:text-gray-400">
-          © 2023{" "}
-          <div href="/" className="hover:underline">
-            Saso
-          </div>
-          . All Rights Reserved.
+          © 2023 <div className="hover:underline">Saso</div>. All Rights
+          Reserved.
         </span>
       </div>
     </footer>
