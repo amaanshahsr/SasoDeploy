@@ -3,7 +3,7 @@ import env from "../Components/env";
 function AboutUs() {
   // before:h-max before:absolute before:content-[''] before:top-0 before:left-0 before:w-1/3 before:bg-red-400 before:z-10
   return (
-    <div className="p-8 sm:p-16 lg:p-24 w-screen relative  bg-[#DAD7CD]">
+    <div className="p-8 sm:p-16 lg:p-24 w-screen relative text-justify bg-[#DAD7CD]">
       <img
         src={`${env}pngwing.com(1).png`}
         className="absolute top-0 right-0 mix-blend-soft-light  z-10"

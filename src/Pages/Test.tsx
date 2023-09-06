@@ -22,7 +22,7 @@ function Test() {
     },
     {
       title: "Chemical-Free Brilliance",
-      body: "Say goodbye to the worry of harsh chemicals invading your living spaces. Saso products are formulated without compromise, ensuring that your home is cleaned to perfection without exposing you to harmful toxins.",
+      body: "Say goodbye to the worry of harsh chemicals invading your living spaces. SASO products are formulated without compromise, ensuring that your home is cleaned to perfection without exposing you to harmful toxins.",
     },
     {
       title: "Plant-Powered Potency",
@@ -30,18 +30,18 @@ function Test() {
     },
     {
       title: "Non-Toxic Luxury",
-      body: "Cleanliness should never come at the cost of your well-being. Saso products offer a luxurious cleaning experience that leaves your home sparkling and pristine, all without compromising your health or the environment.",
+      body: "Cleanliness should never come at the cost of your well-being. SASO products offer a luxurious cleaning experience that leaves your home sparkling and pristine, all without compromising your health or the environment.",
     },
   ];
   return (
     <>
       <section className="w-screen h-max lg:h-max xl:h-max relative  bg-[#3A5A40] text-white md:text-[#DAD7CD] backdrop-blur-xl p-8 sm:p-16 lg:p-24 flex  justify-center ">
-        <div className="   flex flex-col justify-center gap-7 relative z-20 font-semibold font-title xl:w-[50%] ">
+        <div className="   flex flex-col  justify-center gap-7 relative z-20 font-semibold font-title xl:w-[50%] ">
           <h2 className="text-[2.5rem]  sm:text-5xl md:text-7xl leading-[3rem] ">
-            Welcome to Saso: Elevate Your Cleaning Experience with Nature
+            Welcome to SASO: Elevate Your Cleaning Experience with Nature
           </h2>
-          <p className=" text-lg md:text-xl font-body font-medium">
-            At Saso, we believe in the power of nature to transform your home
+          <p className=" text-lg md:text-xl text-justify font-body font-medium">
+            At SASO, we believe in the power of nature to transform your home
             into a healthier, safer, and more vibrant living space. Our passion
             for sustainability and well-being has driven us to create a line of
             exceptional household cleaning products that redefine clean. Say
@@ -49,9 +49,9 @@ function Test() {
             hello to a new era of cleaning that nurtures both your home and the
             planet.
           </p>
-          <p className=" text-lg md:text-xl font-body font-medium">
+          <p className=" text-lg md:text-xl text-justify font-body font-medium">
             We're not just dedicated to elevating your home environment; we're
-            also devoted to preserving the beauty of our planet. Saso products
+            also devoted to preserving the beauty of our planet. SASO products
             are packaged in eco-friendly materials, and our production processes
             are designed to minimize our carbon footprint. With every choice you
             make, you contribute to a brighter future for both your home and the
@@ -79,7 +79,7 @@ function Test() {
           className="absolute scale-125 z-10 mix-blend-overlay md:mix-blend-normal opacity-70 md:opacity-100  left-0 rotate-180 top-0"
         />
       </section>
-      <section className="w-screen xl:h-max relative gap-10 z-[5]  text-white md:text-[#DAD7CD]   bg-[#588157]  p-8 sm:p-16 lg:p-24 text-center lg:text-left flex flex-col lg:flex-row  items-start  ">
+      <section className="w-screen xl:h-max relative gap-10 z-[5]  text-white    bg-[#588157]  p-8 sm:p-16 lg:p-24 text-center lg:text-left flex flex-col lg:flex-row  items-start  ">
         <img
           src={`${env}pngegg(4).webp`}
           className="absolute top-0 mix-blend-overlay md:mix-blend-normal md:hidden right-0 z-10"
@@ -88,11 +88,11 @@ function Test() {
           <h2 className="text-[2.5rem]  sm:text-5xl md:text-7xl z-30 static  leading-[3rem] ">
             Our Commitment to You{" "}
           </h2>
-          <p className=" text-lg md:text-xl z-[801] static font-body font-medium">
-            At the heart of Saso is a commitment to crafting products that align
+          <p className=" text-lg md:text-xl z-[801] text-justify  static font-body font-medium">
+            At the heart of SASO is a commitment to crafting products that align
             with your values and prioritize the health of your family, pets, and
-            the Earth. Our dedication to purity drives every aspect of what we
-            do:
+            Mother Earth. Our dedication to purity drives every aspect of what
+            we do:
           </p>
         </div>
         <div className="text-lg text-[#3A5A40] grid lg:grid-cols-2 gap-5 md:gap-10 z-20 lg:h-full xl:w-[50%] lg:ml-auto">
@@ -124,16 +124,16 @@ function Test() {
 
         <div className=" flex flex-col gap-7 text-9xl font-semibold text-center font-title z-20 xl:w-[50%] ">
           <h2 className="text-[2.5rem] sm:text-5xl md:text-7xl leading-[3rem] ">
-            Join the Saso Revolution
+            Join the SASO Revolution
           </h2>
-          <p className=" text-lg md:text-xl font-body font-medium">
-            When you choose Saso, you're not just selecting cleaning products –
+          <p className=" text-lg md:text-xl text-justify font-body font-medium">
+            When you choose SASO, you're not just selecting cleaning products –
             you're embracing a new way of life that's rooted in harmony with
             nature. We invite you to explore our range of products, from
-            all-purpose cleaners that tackle grime with ease, to gentle dish
-            soaps that make mealtime cleanup a pleasure. Every product embodies
-            the Saso promise: a cleaner, greener, and safer home for you and
-            your loved ones.
+            all-purpose cleaners that tackle grime with ease, to gentle hygiene
+            products that make cleanup a pleasure. Every product embodies the
+            SASO promise: a cleaner, greener, and safer home for you and your
+            loved ones.
           </p>
           <button
             onMouseEnter={changeBg}
@@ -150,17 +150,17 @@ function Test() {
       <section className="w-screen relative bg-[#F7FFE5]  p-8 sm:p-16 lg:p-24 text-center flex flex-col justify-center items-center ">
         <div className=" text-[rgb(62,77,33)] z-20 flex flex-col gap-7   mix-blend-multiply text-9xl font-semibold font-title xl:w-[50%]  ">
           <h2 className="text-[2.5rem]  sm:text-5xl md:text-7xl leading-[3rem] ">
-            Experience the Saso Difference Today
+            Experience the SASO Difference Today
           </h2>
-          <p className=" text-lg md:text-xl font-body font-medium">
+          <p className=" text-lg md:text-xl text-justify font-body font-medium">
             It's time to embark on a cleaning journey that nurtures, protects,
-            and shines. Discover the Saso difference for yourself and join the
+            and shines. Discover the SASO difference for yourself and join the
             growing community of individuals who are transforming their homes
             into havens of purity and vitality. Together, we're shaping a world
             where cleanliness and conscience go hand in hand.
           </p>
           <div className="text-[2.5rem] sm:text-3xl">
-            Elevate your cleaning experience with nature – welcome to Saso.
+            Elevate your cleaning experience with nature – welcome to SASO.
           </div>
           <button
             onClick={() => {
