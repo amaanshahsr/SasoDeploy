@@ -100,7 +100,7 @@ function ProductPage(props: any) {
           <hr className="border-[#333333] my-5 " />
           <div className="w-full  grid grid-cols-3 sm:grid-cols-5 gap-5 place-items-center my-5 ">
             {certificationArray
-              .filter((node: any, index: number) => {
+              .filter((node: any) => {
                 return product?.icons?.includes(node.id);
               })
               .map((node) => {
