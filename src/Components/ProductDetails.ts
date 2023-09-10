@@ -81,12 +81,7 @@ export const ProductDetails=[
     icons:["odor","anitbact","zeroChem","fragrance"],
     url:"ProductImages/SASO Herbal Kennel Wash.jpeg"
 },
-{
-    title:"  Shoe Deodorizer Spray",
-    desc1:"Experience a new level of freshness with SASO Shoe Deodorizer Spray, your go-to solution for banishing unpleasant shoe odors. Our powerful formula is designed to neutralize odors at their source, leaving your shoes smelling clean and fresh, so you can stride in comfort and confidence.",
-    icons:["odor","anitbact","zeroChem","fragrance"],
-    url:"ProductImages/SASO Herbal Kennel Wash.jpeg"
-}
+
 
 
 
