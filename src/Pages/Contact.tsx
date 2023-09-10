@@ -1,7 +1,12 @@
 import { useEffect } from "react";
 import env from "../Components/env";
+import { scrollToTop } from "../Components/ScrollToTop";
 
 function Contact() {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   const detailsection = [
     {
       title: "Address",

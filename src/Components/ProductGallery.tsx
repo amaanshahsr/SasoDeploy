@@ -1,6 +1,13 @@
+import { useEffect } from "react";
+import ProductPage from "../Pages/ProductPage";
 import env from "./env";
+import { ProductDetails } from "./ProductDetails";
+import { scrollToTop } from "./ScrollToTop";
 
 function ProductGallery() {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const imageArray = [
     "SasoBabyDetergent.webp",
     "SasofloorCleaner.webp",
@@ -16,14 +23,12 @@ function ProductGallery() {
     "SASOWMC.webp",
   ];
   return (
-    <div className="w-screen bg-[#3A5A40] relative h-max grid md:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center z-30 text-[white]  backdrop-blur-lg p-7 lg:p-14   font-title">
-      <h1 className=" writing-mode-vertical font-bold md:col-span-2 lg:col-span-4 row-span-1 whitespace-nowrap sm:text-5xl md:text-7xl  lg:text-9xl z-30 text">
+    <div className="w-screen   font-title">
+      <div className="bg-[#F8F0E5] flex justify-center border-t border-b border-[#333333]  p-8 sm:p-16 text-[#333333] text-[2.5rem]  sm:text-5xl md:text-7xl leading-[3rem] font-bold ">
         Our Products
-      </h1>
-      {imageArray.map((node) => {
-        return (
-          <img className="hover:scale-110" src={`${env}Catalogue/${node}`} />
-        );
+      </div>
+      {ProductDetails?.map((node: any, index: number) => {
+        return <ProductPage product={node} index={index} />;
       })}
     </div>
   );

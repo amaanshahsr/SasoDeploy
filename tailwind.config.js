@@ -17,16 +17,16 @@ export default {
         title:['Bricolage Grotesque',...defaultTheme.fontFamily.sans],
         body:["Rubik",...defaultTheme.fontFamily.sans]
       },
-      keyframes: {
-        marquee: {
-          '0%': { transform: 'translateY(-100%) rotate(90deg)' },
-          '100%': { transform: 'translateY(0%) rotate(90deg)' },
+      // keyframes: {
+      //   marquee: {
+      //     '0%': { transform: 'translateY(-100%) rotate(90deg)' },
+      //     '100%': { transform: 'translateY(0%) rotate(90deg)' },
 
-        }
-      },
-      animation: {
-        marquee: 'marquee 15s ease-in-out infinite ',
-      }
+      //   }
+      // },
+      // animation: {
+      //   marquee: 'marquee 15s ease-in-out infinite ',
+      // }
     }
 
   },
