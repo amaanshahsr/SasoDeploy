@@ -38,14 +38,14 @@ function Cursor() {
 
   return (
     <div
-      className={` xl:block hidden p-4 border-white border-2  ${
+      className={` xl:block hidden p-2 border-white border-2  ${
         interactable ? "" : " "
       }   z-[99999] pointer-events-none rounded-full fixed flex mix-blend-difference  items-center text-opacity-50  justify-center   `}
       ref={cursorRef}
     >
       {link ? (
         <svg
-          className="w-16 h-16 duration-200 ease-in-out fill-white"
+          className="w-8 h-8 duration-200 ease-in-out fill-white"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >

@@ -56,7 +56,7 @@ function ProductPage(props: any) {
     },
     {
       url: "Logos/zero-chemicals.png",
-      Title: "Zero Chemicals",
+      Title: "Chemical-Free",
       id: "zeroChem",
     },
     {
@@ -66,7 +66,7 @@ function ProductPage(props: any) {
     },
     {
       url: "Logos/safe-for-children.png",
-      Title: "Safe for Children",
+      Title: "Safe for Baby Skin",
       id: "children",
     },
     {
@@ -74,13 +74,48 @@ function ProductPage(props: any) {
       Title: "Anti Bacterial",
       id: "antibact",
     },
+    {
+      url: "Logos/descales.png",
+      Title: "Descales",
+      id: "descales",
+    },
+    {
+      url: "Logos/watt-hike.png",
+      Title: "Watt Hike",
+      id: "watthike",
+    },
+    {
+      url: "Logos/certified.png",
+      Title: "Lab Certified",
+      id: "certified",
+    },
+    {
+      url: "Logos/balanced.png",
+      Title: "pH Balanced",
+      id: "balanced",
+    },
+    {
+      url: "Logos/scratch.png",
+      Title: "No Scratch Formula",
+      id: "scratch",
+    },
+    {
+      url: "Logos/bio-degradable.png",
+      Title: "Bio Degradable",
+      id: "degrade",
+    },
+    {
+      url: "Logos/alcohol-free.png",
+      Title: "Alcohol Free",
+      id: "alcohol",
+    },
   ];
 
   const marqueeText = ["Non-Toxic", " Plant Based", "Vegan", "Chemical Free"];
 
   return (
     <>
-      <div className="w-full h-max 2xl:h-screen bg-[#F8F0E5] py-6 lg:py-0  text-[#333333] grid lg:grid-cols-2  sm:px-6 xl:px-0 2xl:px-0  ">
+      <div className="w-full h-max  bg-[#F8F0E5] py-6 lg:py-0  text-[#333333] grid lg:grid-cols-2  sm:px-6 xl:px-0 2xl:px-0  ">
         <img
           className={`  w-auto object-contain ${
             index % 2 === 0 ? " " : " lg:order-last"
@@ -89,7 +124,7 @@ function ProductPage(props: any) {
         />
         <div className="flex flex-col p-8  xl:justify-center ">
           <span className="font-title ">SASO</span>
-          <div className="font-semibold font-title  text-[2.5rem] uppercase sm:text-5xl md:text-6xl mb-5 mt-1  leading-[3rem]">
+          <div className="font-semibold font-title break-words text-[2.5rem] uppercase sm:text-5xl md:text-6xl mb-5 mt-1  leading-[3rem]">
             {product?.title}
           </div>
           <div className="text-lg  font-body py-2">
@@ -103,15 +138,22 @@ function ProductPage(props: any) {
               .filter((node: any) => {
                 return product?.icons?.includes(node.id);
               })
+              .sort()
               .map((node) => {
                 return (
                   <div className=" flex flex-col text-center justify-center items-center">
                     <img
                       src={`${env}${node?.url}`}
-                      className="h-8 w-8 md:h-16 md:w-16 xl:h-20 xl:w-20"
+                      className={` h-8 w-8 md:h-16 md:w-16 xl:h-20 xl:w-20`}
                     />
                     <span className="font-bold font-title my-2  ">
-                      {node?.Title}
+                      {product.title === "Shoe Deodorizer Spray" &&
+                      node?.Title === "Natural Fragrance"
+                        ? "Long Lasting Fragrance"
+                        : product.title === "Car & Bike shampoo" &&
+                          node?.Title === "No Chopped Hands"
+                        ? " Soft on Hands"
+                        : node?.Title}
                     </span>
                   </div>
                 );
@@ -120,7 +162,7 @@ function ProductPage(props: any) {
         </div>
       </div>
       <div className="bg-[#F8F0E5] border-t border-b border-[#333333]">
-        <div className=" font-thin relative   marquee text-[#333333]  border-[#333333] font-title sm:text-5xl md:text-6xl flex items-center">
+        <div className=" font-semibold relative uppercase   marquee text-[#333333]  border-[#333333] font-title sm:text-5xl md:text-6xl flex items-center">
           {marqueeText.map((node) => {
             return (
               <>

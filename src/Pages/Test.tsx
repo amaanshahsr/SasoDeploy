@@ -35,7 +35,7 @@ function Test() {
   ];
   return (
     <>
-      <section className="w-screen h-max lg:h-max xl:h-max relative  bg-[#3A5A40] text-white md:text-[#DAD7CD] backdrop-blur-xl p-8 sm:p-16 lg:p-24 flex  justify-center ">
+      <section className="w-screen h-max lg:h-max xl:h-max relative  bg-[#3A5A40] text-white  backdrop-blur-xl p-8 sm:p-16 lg:p-24 flex  justify-center ">
         <div className="   flex flex-col  justify-center gap-7 relative z-20 font-semibold font-title xl:w-[50%] ">
           <h2 className="text-[2.5rem]  sm:text-5xl md:text-7xl leading-[3rem] ">
             Welcome to SASO: Elevate Your Cleaning Experience with Nature
