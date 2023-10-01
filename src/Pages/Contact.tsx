@@ -27,15 +27,19 @@ function Contact() {
   }, []);
 
   return (
-    <div className="p-8 md:p-16 lg:p-24 w-screen overflow-hidden  relative flex lg:justify-end lg:h-screen text-[#344E41] bg-[#DAD7CD]">
+    <div className="p-8 md:p-16   lg:py-8 xl:py-24 w-screen overflow-hidden  relative flex lg:justify-end lg:h-screen text-[white] bg-opacity-40 bg-[#0D0F04]">
       <img
         src={`${env}pngegg(6).webp`}
-        className="absolute rotate-180 top-0 left-0 lg:opacity-100 xl:mix-blend-normal mix-blend-overlay"
+        className="absolute rotate-180 top-0 left-0 scale-150 lg:opacity-100  mix-blend-overlay"
+      />
+      <img
+        src={`${env}pngegg(6).webp`}
+        className="absolute top-0 right-0 scale-150 lg:opacity-100  mix-blend-overlay"
       />
       <div className="xl:w-[75%] grid grid-cols-2 grid-rows-2 gap-10 z-10   ">
         <section className="col-span-2 gap-10 flex flex-col lg:flex-row lg:justify-between ">
           <div className="lg:w-[50%]">
-            <h3 className="text-[3rem] inline-flex  sm:text-5xl md:text-7xl lg:mb-5 font-title font-bold">
+            <h3 className="text-[3rem] relative inline-flex  sm:text-5xl md:text-7xl lg:mb-5 font-title font-bold">
               Contact Us
               <svg
                 className="w-16 h-16 duration-200 ease-in-out fill-[#344E41] ml-5 hover:fill-white"
@@ -55,7 +59,7 @@ function Contact() {
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.8129074250837!2d76.95247525773257!3d9.039369760716376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b067788571bb73b%3A0xa23edb12edbedd53!2sAmmus%20Laboratories!5e0!3m2!1sen!2sin!4v1693067097877!5m2!1sen!2sin"
-            className="border-0 xl:w-[400px] xl:h-[350px] w-full h-[400px] "
+            className="border-0 grow xl:w-[350]  "
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

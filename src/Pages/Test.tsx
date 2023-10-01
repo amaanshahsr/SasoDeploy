@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import env from "../Components/env";
+import { useInView } from "react-intersection-observer";
 
 function Test() {
+  // const { ref, inView, entry } = useInView({
+  //   threshold: 0.5,
+  // });
+  // const [bgColor, setbgColor] = useState("bg-[#3A5A40]");
+
   const [bgchange, setBgchange] = useState(false);
 
   const changeBg = () => {
@@ -14,6 +20,14 @@ function Test() {
   const navigateTo = (route: string) => {
     navigate(route);
   };
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     setbgColor("bg-[#588157]");
+  //   } else {
+  //     setbgColor("bg-[#3A5A40]");
+  //   }
+  // }, [inView]);
 
   const arr = [
     {
@@ -34,10 +48,10 @@ function Test() {
     },
   ];
   return (
-    <>
-      <section className="w-screen h-max lg:h-max xl:h-max relative  bg-[#3A5A40] text-white  backdrop-blur-xl p-8 sm:p-16 lg:p-24 flex  justify-center ">
+    <div className="bg-white">
+      <section className="w-screen rounded-lg h- mt-[100vh] lg:h-max xl:h-max relative  bg-[#3A5A40] text-white  backdrop-blur-xl p-8 sm:p-16 lg:p-24 flex  justify-center ">
         <div className="   flex flex-col  justify-center gap-7 relative z-20 font-semibold font-title xl:w-[50%] ">
-          <h2 className="text-[2.5rem]  sm:text-5xl md:text-7xl leading-[3rem] ">
+          <h2 className="text-[2.5rem] drop-shadow-2xl sm:text-5xl md:text-7xl leading-[3rem] ">
             Welcome to SASO: Elevate Your Cleaning Experience with Nature
           </h2>
           <p className=" text-lg md:text-xl text-justify font-body font-medium">
@@ -79,7 +93,10 @@ function Test() {
           className="absolute scale-125 z-10 mix-blend-overlay md:mix-blend-normal opacity-70 md:opacity-100  left-0 rotate-180 top-0"
         />
       </section>
-      <section className="w-screen xl:h-max relative gap-10 z-[5]  text-white    bg-[#588157]  p-8 sm:p-16 lg:p-24 text-center lg:text-left flex flex-col lg:flex-row  items-start  ">
+
+      <section
+        className={`w-screen rounded-lg xl:h-max relative gap-10 z-[5]  text-white  bg-[#588157]  p-8 sm:p-16 lg:p-24 text-center lg:text-left flex flex-col lg:flex-row  items-start  `}
+      >
         <img
           src={`${env}pngegg(4).webp`}
           className="absolute top-0 mix-blend-overlay md:mix-blend-normal md:hidden right-0 z-10"
@@ -111,7 +128,7 @@ function Test() {
         />
       </section>
       <section
-        className={` ${
+        className={`rounded-lg ${
           bgchange
             ? "bg-white text-[#A3B18A] duration-1000 ease-in-out"
             : "bg-[#A3B18A] text-white duration-1000"
@@ -147,7 +164,7 @@ function Test() {
           </button>
         </div>
       </section>
-      <section className="w-screen relative bg-[#F7FFE5]  p-8 sm:p-16 lg:p-24 text-center flex flex-col justify-center items-center ">
+      <section className="w-screen rounded-lg relative bg-[#F7FFE5]  p-8 sm:p-16 lg:p-24 text-center flex flex-col justify-center items-center ">
         <div className=" text-[rgb(62,77,33)] z-20 flex flex-col gap-7   mix-blend-multiply text-9xl font-semibold font-title xl:w-[50%]  ">
           <h2 className="text-[2.5rem]  sm:text-5xl md:text-7xl leading-[3rem] ">
             Experience the SASO Difference Today
@@ -171,9 +188,9 @@ function Test() {
             View Products
           </button>
         </div>
-        <img className="w-screen " src={`${env}Products.webp`} />
+        <img className="w-screen  " src={`${env}Products.webp`} />
       </section>
-    </>
+    </div>
   );
 }
 
