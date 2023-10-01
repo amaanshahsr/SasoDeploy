@@ -17,7 +17,6 @@ function ProductPage(props: any) {
 
   const [changeUrl, setChangeUrl] = useState<boolean>(false);
 
-  const [bgChange, setBgChange] = useState<boolean>(false);
   const certificationArray = [
     {
       url: "Logos/eco-friendly.png",
@@ -208,12 +207,6 @@ function ProductPage(props: any) {
           <button
             onClick={() => {
               navigateTo("/contact");
-            }}
-            onMouseEnter={() => {
-              setBgChange(true);
-            }}
-            onMouseLeave={() => {
-              setBgChange(false);
             }}
             className="text-lg flex justify-center gap-4 items-center [&>svg]:hover:fill-[#dfebe7]  shadow-[5px_5px_0px_0px_black] hover:shadow-[5px_5px_0px_0px_black]  mx-auto font-semibold link md:text-xl lg:w-2/4 rounded-md my-3 p-4 duration-1000 ease-out bg-[#dfebe7] hover:bg-[#1b1c17] hover:text-[#dfebe7] text-black "
           >

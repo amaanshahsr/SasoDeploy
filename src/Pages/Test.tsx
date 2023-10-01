@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import env from "../Components/env";
-import { useInView } from "react-intersection-observer";
 
 function Test() {
   // const { ref, inView, entry } = useInView({

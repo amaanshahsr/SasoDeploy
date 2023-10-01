@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import env from "./env";
-import Contact from "../Pages/Contact";
 
 function Footer() {
   const location = useLocation();

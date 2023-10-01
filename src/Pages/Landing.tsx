@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 function Landing() {
   const [first, setfirst] = useState(false);
 
   useEffect(() => {
-    document.addEventListener("scroll", (event) => {
+    document.addEventListener("scroll", () => {
       if (window.scrollY > window.innerHeight) {
         setfirst(true);
       } else {
